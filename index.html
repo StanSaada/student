@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionnaire d'Absence</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="student">
+            <h1>Liste d'Absences</h1>
+
+            <ul class="student-list"></ul>
+
+            <form action="#">
+                <input type="text" placeholder="Entrez votre prénom" class="firstname" required>
+                <input type="text" placeholder="Entrez votre nom" class="name" required>
+                <input type="submit" value="Ajouter">
+            </form>
+        </div>
+
+        <div class="stats">
+            <p>Il y a <span class="total-student">0</span> étudiants</p>
+            <p>Il y a <span class="present">0</span> étudiants présents</p>
+            <p>Il y a <span class="absent">0</span> étudiants absents</p>
+        </div>
+
+    </div>
+
+
+    <!-- LIB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="lib/backbone.localStorage.js"></script>
+    <!-- LIB -->
+
+    <!-- Scripts de notre application -->
+    <script src="scripts/models/student-model.js"></script>
+    <script src="scripts/collections/student-collection.js"></script>
+    <script src="scripts/views/student-list.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- Scripts de notre application -->
+
+</body>
+
+</html>
